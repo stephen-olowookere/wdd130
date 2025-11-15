@@ -4,11 +4,26 @@
     padding: 15px;
     background-color: #247;
     color: #fff;
-
 }
 
-.callout img {}
+.callout img {
+    float: right;
+    margin: 0 0 10px 15px;
+    border: 1px solid #000;
+    padding: 3px;
+    backgroung-color: #bbb;
+    width: 100px;
+    height: auto;
+}
 
-blockquote {}
+blockquote {
+    margin: 0;
+}
 
-cite {}
+cite {
+    display: block;
+    border-top: 1px dotted #fff;
+    text-align: right;
+    font-size: smaller;
+
+}
