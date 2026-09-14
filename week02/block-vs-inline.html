@@ -11,29 +11,57 @@
 <body>
     <main>
         <h1>Exercise: Block vs. Inline Elements</h1>
-        <p class="note">Some basic styling has been applied in order to illustrate the elements structure and
+        <p class="note">Some basic styling has been applied in order to illustrate the elements
+            structure and
             boundaries.</p>
 
         <h2>Task 1: Swap Block and Inline Elements</h2>
-        <div>In the HTML of this document, change this div element to a span element.</div>
+        <span>In the HTML of this document, change this div element to a span element.</span>
 
-        <p class="question">What happens to the layout? Does it still take up the full width?</p>
+        <p class="question">What happens to these layout? Does it still take up the full width?, No
+            "Changing the div to a span changed the layout: it no longer takes up the full width, it
+            only hugs
+            its content. It doesn't stand on its own by choice; it just ends up alone on a line
+            because the
+            block elements around it (the h2 above and the p below) force line breaks. If there were
+            inline
+            content next to it instead, it would share that line."</p>
 
         <h2>Task 2: Nesting Inline in Block</h2>
-        <p>A paragraph &lt;p&gt; element (block) with a <span>&lt;span&gt; element;</span></p>
-        <p class="question">Add another inline element like &lt;em&gt; or &lt;strong&gt; inside the paragraph. Observe
-            how it flows within the line.</p>
+        <p>A paragraph &lt;p&gt; element (block) with a <span>&lt;span&gt; element;</span>
+            <em>&lt;em&gt; element </em>
+        </p>
+        <p class="question">Add another inline element like &lt;em&gt; or &lt;strong&gt; inside the
+            paragraph. Observe
+            how it flows within the line. the inline elements shared the line smoothly, no forced
+            breaks.</p>
 
         <h2>Task3: Nesting Block in Inline</h2>
-        <span>Try placing a &lt;div&gt; inside a &lt;span&gt; element.</span>
-            <p class="question">What error or layout issue do you see? Why does this happen?</p>
+        <span>Try placing a &lt;div&gt; inside a &lt;span&gt; element.<div>&lt;div&gt;</div></span>
+        <p class="question">What error or layout issue do you see? Why does this happen? "It's an
+            HTML error to place a block element inside an inline element. I observed that the
+            browser
+            fixed this invalid nesting — but in fixing it, the div broke out of the span and sat as
+            its own
+            separate block, splitting the span's content around it."</p>
 
 
-            <h2>Task 4: Review the HTML markup of the following Inline Elements</h2>
+        <h2>Task 4: Review the HTML markup of the following Inline Elements</h2>
         &lt;img&gt; element
-        <img src="images/castle.webp" alt="placeholder image (images are inline)" width="300" height="300">
+        <img src="images/castle.webp" alt="placeholder image (images are inline)" width="300"
+          height="300">
         <a href="https://churchofjesuschrist.org">&lt;a&gt; anchor element</a>
-        <button type="button">&lt;button&gt; element</button>
+        <button type="button">&lt;button&gt; element "Having run the code, I observed that the width
+            and height set on the a and button elements had no
+            real effect since they're non-replaced inline elements, they just rendered with their
+            normal
+            content-based layout. The img, however, did need those dimensions, because it pulls its
+            content from
+            an external source and has to be rendered at a controlled size. This also lets the
+            browser reserve
+            space for the image in the layout before it even finishes loading, preventing the page
+            from shifting
+            around once it does."</button>
     </main>
 </body>
 
