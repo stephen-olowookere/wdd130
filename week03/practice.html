@@ -4,15 +4,25 @@
 <head>
     <meta charse="UTF-8">
     <title> Learning CSS Selectors </title>
-    <link rel="stylesheet" href="styles/practice.css">
+    <style>
+        input:focus {
+            background: red
+        }
+    </style>
 </head>
 
 <body>
     <main>
-        <div> This is a div </div>
-        <span> This is a span </span>
+        <input type="text">
+        <div class="red"> This is a div </div>
+        <span id="blue"> This is a span </span>
+        <div>
+            <span>
+                <b> nested text</b>
+            </span>
+        </div>
         <u1>
-            <li> Item 1 </li>
+            <li class="red"> Item 1 </li>
             <li> Item 2 </li>
             <li> Item 3 </li>
             <li> Item 4 </li>
