@@ -1,0 +1,17 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 250px;
+    grid-auto-rows: minmax(150px, auto);
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.grid-item {
+    background-color: blue;
+    border: 1px solid black;
+    padding: 20px;
+
+}
