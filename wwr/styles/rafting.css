@@ -20,6 +20,15 @@ header {
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    background-color: black;
+    margin: 65px auto;
+
+}
+
+.page {
+    background-color: white;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 header,
@@ -63,13 +72,22 @@ nav ul {
     background-color: rgb(57, 77, 120, 0.79);
     color: white;
     position: absolute;
-    bottom: 260px;
+    bottom: 275px;
     top: 435px;
-    font-family: "Roboto", Arial, serif;
+    font-family: "Lato", Arial, serif;
     padding: 2px;
 }
 
-.hero section {}
+.hero section {
+    margin: 0 auto;
+}
+
+.hero section p {
+    padding: 0;
+    margin: 0;
+    font-family: "Lato";
+    font-weight: 700;
+}
 
 .hero img {
     width: 100%;
@@ -95,10 +113,16 @@ h2 {
     font-family: "Lato";
     font-weight: 900;
     padding: 10px;
-
+    margin: 15px 0 15px 0;
 }
 
 .hero article img {
     float: right;
     width: 126px;
+}
+
+footer {
+    border-top: 1px solid gray;
+    font-family: "Lato";
+    font-weight: 700;
 }
