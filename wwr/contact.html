@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Rafting Website | Contact Us </title>
+    <meta name="description"
+      content="Contact Rapid Rush Expeditions in Kolob, California. Find our address, phone number, email and map, meet our team, and send us a message about trips and reservations.">
+    <meta name="author" content="Oluwabori Stephen Olowookere">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <img
+              src="https://byui-cse.github.io/wdd130-ww-course/resources/images/logos/z-crossedoars.jpeg"
+              alt="Rafting Website logo">
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trips.html">Adventures</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="contact-info">
+                <h1>Rapid Rush Expeditions</h1>
+                <address>
+                    123 Main Street<br>
+                    Kolob, California<br>
+                    <a href="tel:+19999999999">+1 999 999 9999</a><br>
+                    <a href="mailto:info@whitewater.com">info@whitewater.com</a>
+                </address>
+            </section>
+
+            <div class="contact-grid">
+                <!-- Paste YOUR Google Maps embed link in src. Do NOT keep style="border:0". -->
+                <iframe src="PASTE-YOUR-GOOGLE-MAP-EMBED-LINK-HERE"
+                  title="Map showing the location of Rapid Rush Expeditions in Kolob, California"
+                  loading="lazy" allowfullscreen
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <form action="#" method="post" class="contact-form">
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com"
+                          required>
+                    </div>
+
+                    <fieldset>
+                        <legend>Message Purpose</legend>
+                        <label for="general">
+                            <input type="radio" id="general" name="purpose" value="general" checked>
+                            General Inquiry
+                        </label>
+                        <label for="reservation">
+                            <input type="radio" id="reservation" name="purpose" value="reservation">
+                            Reservation Question
+                        </label>
+                        <label for="suggestion">
+                            <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                            Website Suggestion
+                        </label>
+                    </fieldset>
+
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Type here"
+                          required></textarea>
+                    </div>
+
+                    <label for="newsletter" class="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes"> Please
+                        subscribe me to the monthly newsletter
+                    </label>
+
+                    <button type="submit">Get in Touch!</button>
+                </form>
+            </div>
+
+            <section class="team">
+                <h2>We Are Here to Serve You</h2>
+                <div class="team-row">
+                    <figure>
+                        <img src="images/employee1.jpg" alt="Portrait of our head guide" width="120"
+                          height="120">
+                        <figcaption>Head Guide</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/employee2.jpg" alt="Portrait of our reservations manager"
+                          width="120" height="120">
+                        <figcaption>Reservations Manager</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/employee3.jpg" alt="Portrait of our safety coordinator"
+                          width="120" height="120">
+                        <figcaption>Safety Coordinator</figcaption>
+                    </figure>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p> © 2026 💧 Rapid Rush Expeditions 💧 Oluwabori Stephen Olowookere. </p>
+
+            <nav class="social-media">
+                <a href="https://facebook.com">
+                    <img
+                      src="https://byui-cse.github.io/wdd130-ww-course/resources/images/icons/facebook.svg"
+                      alt="Facebook Icon"> </a>
+                <a href="https://instagram.com">
+                    <img
+                      src="https://byui-cse.github.io/wdd130-ww-course/resources/images/icons/instagram-square.svg"
+                      alt="Instagram Icon"> </a>
+                <a href="https://linkedin.com">
+                    <img
+                      src="https://byui-cse.github.io/wdd130-ww-course/resources/images/icons/linkedin-square.svg"
+                      alt="LinkedIn Icon"></a>
+            </nav>
+        </footer>
+    </div>
+</body>
+
+</html>
