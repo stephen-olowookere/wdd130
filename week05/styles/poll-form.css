@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-content: center;
+}
+
+header {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 650px;
+}
+
+h1 {
+    text-align: center;
+    color: navy;
+    margin: 16px;
+    font-size: 24px;
+}
+
+body {
+    font-family: "Merriweather";
+    font-size: 15px;
+    color: #333;
+    background: #fff;
+}
+
+form {
+    width: 100%;
+    max-width: 590px;
+    margin: 0 auto;
+    background-color: #eee;
+    padding: 20px;
+    border: 1px solid rgb(0 0 0 /0.1);
+    border-radius: 8px;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    padding: 16px;
+    margin: 16px;
+    grid-gap: 0.5rem;
+    border: 1px solid (0 0 0 /0.2)
+}
+
+legend {
+    color: navy;
+    padding: 8px;
+    font-size: 21px;
+}
+
+.name {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+
+}
+
+.name input {
+    padding: 7px;
+}
+
+.email {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+
+}
+
+.email input {
+    padding: 7px;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+    font-family: "Roboto";
+}
+
+.browser {
+    display: grid;
+    grid-template-columns: 375px 1fr;
+    font-size: 16.5px;
+    padding: 9px;
+}
+
+.browser input {
+    padding: 9px;
+}
+
+.pet {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    font-size: 16.5px;
+    padding: 8px;
+}
+
+.pet label {
+    text-align: right;
+}
+
+.place {
+    display: grid;
+    margin: 10px;
+}
+
+.place label {
+    text-align: center;
+    font-size: 16.5px;
+}
+
+footer {
+    text-align: center;
+    border-top-width: 590px;
+    border-top: 1px solid rgb(0 0 0 /0.2);
+    margin: 12px;
+    padding: 2px;
+    color: rgb(0 0 0 /0.6);
+
+}
