@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form Learning </title>
+</head>
+
+<body>
+    <form>
+        <label for="username"> Username: </label>
+        <input type="text" id="username" name="username">
+        <button type="submit"> Submit </button>
+    </form>
+</body>
+<form>
+    <label for="email"> Email Address </label>
+    <input type="email" id="email" name="email">
+    <label for="password"> Password </label>
+    <input type="password" id="passowrd" name="password">
+    <label for="message"> Your Message </label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <label><input type="checkbox" id="newsletter" name="newsletter"> Send me updates </label>
+    <button type="submit"> Send Message </button>
+    <fieldset>
+        <legend> Preferred Contact Method </legend>
+        <label><input type="radio" name="contact" value="email"> Email </label>
+        <label><input type="radio" name="contact" value="phone"> Phone </label>
+    </fieldset>
+</form>
+<form>
+    <label for="fullname"> Full Name </label>
+    <input type="text" id="fullname" name="fullname" required>
+
+    <label for="phone"> Phone Number </label>
+    <input type="phone" id="phone" name="phone" placeholder="123-456-7890">
+
+    <button type="submit"> Submit Contact Information </button>
+</form>
+
+</html>
