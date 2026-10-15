@@ -10,8 +10,17 @@
 header {
     color: var(--accent2-color);
     display: grid;
-    grid-template-columns: 350px 1fr;
+    grid-template-columns: 275px 425px;
     align-items: center;
+    justify-content: center;
+    background-color: #dacafb;
+
+}
+
+header img {
+    width: 150px;
+    padding: 15px;
+    mix-blend-mode: multiply;
 
 }
 
@@ -33,6 +42,7 @@ body {
     background-color: white;
     max-width: 900px;
     margin: 0 auto;
+
 }
 
 header,
@@ -42,8 +52,7 @@ footer {
     margin: 0 auto;
 }
 
-h1,
-h2 {
+h1 {
     font-family: var(--heading-font);
     color: white;
     background-color: hsla(219, 61%, 24%, 1);
@@ -57,8 +66,8 @@ section {
 }
 
 nav ul {
-    color: blue;
-    padding: 0;
+    background-color: white;
+    color: black;
     margin: 0;
     list-style: none;
     display: flex;
@@ -72,6 +81,7 @@ nav ul li {
     border-right: 1px solid black;
     flex: 1;
     text-align: center;
+
 }
 
 nav ul li:last-child {
@@ -86,20 +96,24 @@ nav ul li:last-child {
 
 .hero {
     position: relative;
+    margin: 5px 0 0 0;
 }
 
 .hero article {
     background-color: rgb(57, 77, 120, 0.79);
     color: white;
     position: absolute;
-    bottom: 300px;
+    bottom: 285px;
     top: 435px;
     font-family: "Lato", Arial, serif;
     padding: 2px;
 }
 
 .hero section {
-    margin: 0 auto;
+    margin: 14px auto;
+    border: 1px solid #999;
+    background-color: rgb(247 246 246 1);
+
 }
 
 .hero section p {
@@ -113,6 +127,19 @@ nav ul li:last-child {
     width: 100%;
     display: block;
     height: auto;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 190px 1fr;
+    gap: 5px;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.history p {
+    padding: 6px;
 }
 
 h1 {
@@ -132,8 +159,8 @@ h2 {
     text-align: center;
     font-family: "Lato";
     font-weight: 900;
-    padding: 15px;
-    margin: 30px 0 15px 0;
+    padding: 0;
+    margin: 10px 0 2px 0;
 }
 
 .hero article img {
@@ -142,7 +169,36 @@ h2 {
 }
 
 footer {
-    border-top: 1px solid gray;
-    font-family: "Lato";
-    font-weight: 700;
+    width: 840px;
+    max-width: 100%;
+    background-color: #dacafb;
+    border: 1px solid #999;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Lato", Arial, sans-serif;
+    font-weight: 400;
+
+}
+
+footer p {
+    margin: 0;
+    flex: 1;
+    text-align: center;
+    background-color: #dacafb;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #dacafb;
+}
+
+.social-media img {
+    width: 35px;
+    height: 35px;
+    display: block;
+    background-color: #dacafb;
 }
